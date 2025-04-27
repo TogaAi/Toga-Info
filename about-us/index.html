@@ -5,25 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us – TogaAI</title>
     <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-
+        /* ── HEADER & NAV STYLES ──────────────────────────────────────────────── */
         header {
-            background-color: #ffffff;
-            padding: 20px 40px;
             display: flex;
             align-items: center;
+            padding: 20px 40px;
             border-bottom: 1px solid #e0e0e0;
+            background-color: #ffffff;
         }
 
             header img {
                 height: 50px;
             }
+
+            header .site-nav {
+                margin-left: auto;
+            }
+
+                header .site-nav a {
+                    margin: 0 1rem;
+                    color: #333333;
+                    text-decoration: none;
+                    font-weight: 600;
+                }
+
+                    header .site-nav a:hover {
+                        text-decoration: underline;
+                    }
+
+        /* ── PAGE STYLES ─────────────────────────────────────────────────────── */
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333333;
+        }
 
         .container {
             max-width: 960px;
@@ -40,17 +57,13 @@
             margin-bottom: 20px;
         }
 
-        .features, .roadmap {
-            margin-top: 40px;
-        }
-
         .feature-list, .roadmap-list {
             list-style: none;
             padding-left: 0;
         }
 
             .feature-list li, .roadmap-list li {
-                background: #ffffff;
+                background-color: #ffffff;
                 margin-bottom: 10px;
                 padding: 15px;
                 border-radius: 5px;
@@ -69,7 +82,13 @@
 <body>
     <header>
         <img src="../images/logo/logo.png" alt="TogaAI Logo" />
+        <nav class="site-nav">
+            <a href="index.html">About Us</a>
+            <a href="../privacy-policy/index.html">Privacy Policy</a>
+            <a href="../terms/index.html">Terms</a>
+        </nav>
     </header>
+
     <div class="container">
         <h1>About TogaAI</h1>
         <p>
@@ -106,6 +125,7 @@
             Stay tuned for more exciting features as we continue to innovate and redefine the boundaries of fashion technology.
         </p>
     </div>
+
     <footer>
         <p style="text-align: center; font-style: italic;">
             Made with ❤️ by the TogaAI team
